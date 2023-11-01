@@ -17,6 +17,14 @@ def encode(num):
     return encodedPassword
 
 
+def decode(num):  # Kai Vedder
+    decodedPassword = ""
+    for digit in num:
+        print(digit)
+        decodedPassword += str((int(digit) - 3) % 10)
+    return decodedPassword
+
+
 def main():
     MenuOn = True
     while MenuOn:
